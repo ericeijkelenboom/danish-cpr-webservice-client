@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="PersonBasicInformationService_2" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:tns="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns="http://www.w3.org/2001/XMLSchema">
+			<xs:import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" schemaLocation="CPR_PersonBasicInformationRequest.xsd"/>
+			<xs:import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" schemaLocation="CPR_PersonBasicInformationResponse.xsd"/>
+		</xs:schema>
+  </types>
+  <message name="PersonBasicInformationResponse_1_Response">
+    <part name="Output" element="tns:PersonBasicInformationResponse">
+    </part>
+  </message>
+  <message name="PersonBasicInformationRequest_1_Request">
+    <part name="Input" element="tns:PersonBasicInformationRequest">
+    </part>
+  </message>
+  <portType name="PersonBasicInformationService_1_portType">
+    <operation name="PersonBasicInformationService_1_operation">
+      <input name="OperationInput" message="tns:PersonBasicInformationRequest_1_Request">
+    </input>
+      <output name="OperationOutput" message="tns:PersonBasicInformationResponse_1_Response">
+    </output>
+    </operation>
+  </portType>
+  <binding name="PersonBasicInformationService_1_binding" type="tns:PersonBasicInformationService_1_portType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="PersonBasicInformationService_1_operation">
+      <soap:operation soapAction="http://localhost:8080/axis2/services/PersonBasicInformationService_2/Input" style="document"/>
+      <input name="OperationInput">
+        <soap:body parts="Input" use="literal"/>
+      </input>
+      <output name="OperationOutput">
+        <soap:body parts="Output" use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="PersonBasicInformationService_2">
+    <port name="PersonBasicInformationService_1_binding" binding="tns:PersonBasicInformationService_1_binding">
+      <soap:address location="https://soap.cpr.dk/axis2/services/PersonBasicInformationService_2"/>
+    </port>
+  </service>
+</definitions>

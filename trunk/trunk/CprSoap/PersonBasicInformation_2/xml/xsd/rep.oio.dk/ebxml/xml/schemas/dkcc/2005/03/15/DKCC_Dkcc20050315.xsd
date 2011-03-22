@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<include schemaLocation="DKCC_BirthDate.xsd"/>
+	<include schemaLocation="DKCC_StreetName.xsd"/>
+	<include schemaLocation="DKCC_DistrictName.xsd"/>
+	<include schemaLocation="DKCC_DistrictSubdivisionIdentifier.xsd"/>
+	<include schemaLocation="DKCC_PostCodeIdentifier.xsd"/>
+</schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" elementFormDefault="qualified">
+	<include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationIdentifierStatusCode.xsd"/>
+	<include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationIdentifierReasonsCode.xsd"/>
+	<element name="PersonCivilRegistrationIdentifierCodeStructure" type="cpr:PersonCivilRegistrationStatusIdentifierCodeStructureType"/>
+	<complexType name="PersonCivilRegistrationStatusIdentifierCodeStructureType">
+		<sequence>
+			<element ref="cpr:PersonCivilRegistrationIdentifierStatusCode" minOccurs="1"/>
+			<element ref="cpr:PersonCivilRegistrationIdentifierReasonsCode" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</schema>

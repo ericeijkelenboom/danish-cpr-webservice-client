@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<include schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressSixthLineText.xsd"/>
+	<include schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFirstLineText.xsd"/>
+	<include schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressSecondLineText.xsd"/>
+	<include schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressThirdLineText.xsd"/>
+	<include schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFourthLineText.xsd"/>
+	<include schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFifthLineText.xsd"/>
+</schema>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/" elementFormDefault="qualified" attributeFormDefault="qualified" version="1.1">
+	<include schemaLocation="CPR_AuthorityName.xsd"/>
+	<element name="MunicipalityName" type="cpr:MunicipalityNameType"/>
+	<simpleType name="MunicipalityNameType">
+		<restriction base="cpr:AuthorityNameType"/>
+	</simpleType>
+</schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/10/31/" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/10/31/" elementFormDefault="qualified">
+	<!--Imports -->
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFirstLineText.xsd"/>
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressSecondLineText.xsd"/>
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressThirdLineText.xsd"/>
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFourthLineText.xsd"/>
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFifthLineText.xsd"/>
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressSixthLineText.xsd"/>
+	<!-- -->
+	<element name="SecondaryPostalLabel" type="cpr:SecondaryPostalLabelType"/>
+	<!-- -->
+	<complexType name="SecondaryPostalLabelType">
+		<sequence>
+			<element ref="dkcc:PostalAddressFirstLineText"/>
+			<element ref="dkcc:PostalAddressSecondLineText"/>
+			<element ref="dkcc:PostalAddressThirdLineText"/>
+			<element ref="dkcc:PostalAddressFourthLineText" minOccurs="0"/>
+			<element ref="dkcc:PostalAddressFifthLineText" minOccurs="0"/>
+			<element ref="dkcc:PostalAddressSixthLineText" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</schema>

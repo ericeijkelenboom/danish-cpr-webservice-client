@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2005/03/15/DKCC_Dkcc20050315.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" />
+  <import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" />
+  <import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/03/18/CPR_Core20050318.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" />
+  <include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_GreenlandBuildingIdentifier.xsd" />
+  <element name="AddressNotComplete" type="cpr:AddressNotCompleteType" />
+  <complexType name="AddressNotCompleteType">
+    <sequence>
+      <element ref="cpr-3:MunicipalityCode" />
+      <element ref="cpr-3:StreetCode" />
+      <element minOccurs="0" ref="dkcc-2:MailDeliverySublocationIdentifier" />
+      <element minOccurs="0" ref="dkcc:StreetName" />
+      <element minOccurs="0" ref="cpr-3:StreetNameForAddressingName" />
+      <element minOccurs="0" ref="dkcc-2:StreetBuildingIdentifier" />
+      <element minOccurs="0" ref="cpr:GreenlandBuildingIdentifier" />
+      <element minOccurs="0" ref="dkcc-2:SuiteIdentifier" />
+      <element minOccurs="0" ref="dkcc-2:FloorIdentifier" />
+      <element minOccurs="0" ref="dkcc:DistrictSubdivisionIdentifier" />
+      <element ref="dkcc:PostCodeIdentifier" />
+      <element ref="dkcc:DistrictName" />
+      <element minOccurs="0" ref="dkcc-2:CountryIdentificationCode" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2005/03/15/DKCC_Dkcc20050315.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" />
+  <xs:import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" />
+  <xs:import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/03/18/CPR_Core20050318.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_GreenlandBuildingIdentifier.xsd" />
+  <xs:element name="AddressCompleteGreenland" type="cpr:AddressCompleteGreenlandType" />
+  <xs:complexType name="AddressCompleteGreenlandType">
+    <xs:sequence>
+      <xs:element ref="cpr-3:MunicipalityCode" />
+      <xs:element ref="cpr-3:StreetCode" />
+      <xs:element minOccurs="0" ref="dkcc-2:MailDeliverySublocationIdentifier" />
+      <xs:element ref="dkcc:StreetName" />
+      <xs:element minOccurs="0" ref="cpr-3:StreetNameForAddressingName" />
+      <xs:element minOccurs="0" ref="dkcc-2:StreetBuildingIdentifier" />
+      <xs:element minOccurs="0" ref="cpr:GreenlandBuildingIdentifier" />
+      <xs:element minOccurs="0" ref="dkcc-2:SuiteIdentifier" />
+      <xs:element minOccurs="0" ref="dkcc-2:FloorIdentifier" />
+      <xs:element minOccurs="0" ref="dkcc:DistrictSubdivisionIdentifier" />
+      <xs:element ref="dkcc:PostCodeIdentifier" />
+      <xs:element ref="dkcc:DistrictName" />
+      <xs:element minOccurs="0" ref="dkcc-2:CountryIdentificationCode" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

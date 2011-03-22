@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cpr:PersonBasicInformationResponse xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/">
+	<cpr:PersonBasicInformationStructure>
+		<cpr-3:PersonCivilRegistrationIdentifier xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+		<cpr-2:AddresseeName xmlns:cpr-2="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/"/>
+		<cpr-1:PersonBirthDateStructure xmlns:cpr-1="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/">
+			<dkcc:BirthDate xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+			<cpr-1:BirthDateUncertaintyIndicator xmlns:cpr-1="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/"/>
+		</cpr-1:PersonBirthDateStructure>
+		<dkcc-1:PersonGenderCode xmlns:dkcc-1="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2006/01/23/"/>
+		<cpr:PersonStatusCode/>
+		<cpr:PersonDeathDateStructure>
+			<cpr:PersonDeathDate/>
+			<cpr:PersonDeathDateUncertaintyIndicator/>
+		</cpr:PersonDeathDateStructure>
+		<cpr:PersonCivilRegistrationIdentifierCodeStructure>
+			<cpr:PersonCivilRegistrationIdentifierStatusCode/>
+			<cpr:PersonCivilRegistrationIdentifierReasonsCode/>
+		</cpr:PersonCivilRegistrationIdentifierCodeStructure>
+		<cpr:PersonCivilRegistrationCurrentIdentifier/>
+		<cpr:AddressIdentifierCode/>
+		<cpr:DanishAddressStructure>
+			<cpr:AddressStatusCode/>
+			<cpr-4:MunicipalityName xmlns:cpr-4="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/"/>
+			<itst:CareOfName xmlns:itst="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"/>
+			<xkom-1:AddressComplete xmlns:xkom-1="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/">
+				<xkom-2:AddressAccess xmlns:xkom-2="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/">
+					<cpr-3:MunicipalityCode xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+					<cpr-3:StreetCode xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+					<dkcc-2:StreetBuildingIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				</xkom-2:AddressAccess>
+				<xkom-1:AddressPostal xmlns:xkom-1="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/">
+					<dkcc-2:MailDeliverySublocationIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+					<dkcc:StreetName xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+					<cpr-3:StreetNameForAddressingName xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+					<dkcc-2:StreetBuildingIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+					<dkcc-2:FloorIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+					<dkcc-2:SuiteIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+					<dkcc:DistrictSubdivisionIdentifier xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+					<dkcc-3:PostOfficeBoxIdentifier xmlns:dkcc-3="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"/>
+					<dkcc:PostCodeIdentifier xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+					<dkcc:DistrictName xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+					<dkcc-2:CountryIdentificationCode xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				</xkom-1:AddressPostal>
+			</xkom-1:AddressComplete>
+			<cpr:AddressCompleteGreenland>
+				<cpr-3:MunicipalityCode xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+				<cpr-3:StreetCode xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+				<dkcc-2:MailDeliverySublocationIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<dkcc:StreetName xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<cpr-3:StreetNameForAddressingName xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+				<dkcc-2:StreetBuildingIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<cpr:GreenlandBuildingIdentifier/>
+				<dkcc-2:SuiteIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<dkcc-2:FloorIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<dkcc:DistrictSubdivisionIdentifier xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<dkcc:PostCodeIdentifier xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<dkcc:DistrictName xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<dkcc-2:CountryIdentificationCode xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+			</cpr:AddressCompleteGreenland>
+			<cpr:AddressNotComplete>
+				<cpr-3:MunicipalityCode xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+				<cpr-3:StreetCode xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+				<dkcc-2:MailDeliverySublocationIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<dkcc:StreetName xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<cpr-3:StreetNameForAddressingName xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+				<dkcc-2:StreetBuildingIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<cpr:GreenlandBuildingIdentifier/>
+				<dkcc-2:SuiteIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<dkcc-2:FloorIdentifier xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+				<dkcc:DistrictSubdivisionIdentifier xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<dkcc:PostCodeIdentifier xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<dkcc:DistrictName xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+				<dkcc-2:CountryIdentificationCode xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+			</cpr:AddressNotComplete>
+			<cpr-6:CompletePostalLabel xmlns:cpr-6="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/">
+				<cpr-2:AddresseeName xmlns:cpr-2="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/"/>
+				<dkcc-4:PostalAddressFirstLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+				<dkcc-4:PostalAddressSecondLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+				<dkcc-4:PostalAddressThirdLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+				<dkcc-4:PostalAddressFourthLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+				<dkcc-4:PostalAddressFifthLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+				<dkcc-4:PostalAddressSixthLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+			</cpr-6:CompletePostalLabel>
+		</cpr:DanishAddressStructure>
+		<cpr:ForeignAddressStructure>
+			<dkcc-4:PostalAddressFirstLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+			<dkcc-4:PostalAddressSecondLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+			<dkcc-4:PostalAddressThirdLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+			<dkcc-4:PostalAddressFourthLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+			<dkcc-4:PostalAddressFifthLineText xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/"/>
+			<dkcc-2:CountryIdentificationCode xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+			<capevo:LocationDescriptionText xmlns:capevo="http://rep.oio.dk/capevo.dk/xml/schemas/2007/08/01/"/>
+		</cpr:ForeignAddressStructure>
+		<cpr-1:PersonInformationProtectionIndicator xmlns:cpr-1="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/"/>
+	</cpr:PersonBasicInformationStructure>
+	<cpr:ReturnStructure>
+		<cpr:ReturnCode/>
+		<cpr:ReturnMessageText/>
+	</cpr:ReturnStructure>
+</cpr:PersonBasicInformationResponse>

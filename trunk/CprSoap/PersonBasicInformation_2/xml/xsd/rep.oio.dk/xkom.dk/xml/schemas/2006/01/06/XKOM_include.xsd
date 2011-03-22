@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<include schemaLocation="XKOM_AddressComplete.xsd"/>
+	<include schemaLocation="XKOM_AddressPostal.xsd"/>	
+</schema>

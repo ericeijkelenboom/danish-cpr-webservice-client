@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="PersonCivilRegistrationIdentifierStatusCode" type="cpr:PersonCivilRegistrationIdentifierCodeType" />
+  <simpleType name="PersonCivilRegistrationIdentifierCodeType">
+    <restriction base="integer">
+      <enumeration value="1" />
+      <enumeration value="9" />
+    </restriction>
+  </simpleType>
+</schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Brian H N (CSC Danmark A/S) -->
+<schema targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!--DKCC_Dkcc20050315.xsd-->
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2005/03/15/DKCC_Dkcc20050315.xsd"/>
+	<!--DKCC_Dkcc20030213.xsd-->
+	<import namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd"/>
+	<!--CPR_Core20050318.xsd-->
+	<import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/03/18/CPR_Core20050318.xsd"/>
+	<include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_GreenlandBuildingIdentifier.xsd"/>
+	<element name="AddressNotComplete" type="cpr:AddressNotCompleteType"/>
+	<complexType name="AddressNotCompleteType">
+		<sequence>
+			<element ref="cpr-3:MunicipalityCode"/>
+			<element ref="cpr-3:StreetCode"/>
+			<element ref="dkcc-2:MailDeliverySublocationIdentifier" minOccurs="0"/>
+			<element ref="dkcc:StreetName" minOccurs="0"/>
+			<element ref="cpr-3:StreetNameForAddressingName" minOccurs="0"/>
+			<element ref="dkcc-2:StreetBuildingIdentifier" minOccurs="0"/>
+			<element ref="cpr:GreenlandBuildingIdentifier" minOccurs="0"/>
+			<element ref="dkcc-2:SuiteIdentifier" minOccurs="0"/>
+			<element ref="dkcc-2:FloorIdentifier" minOccurs="0"/>
+			<element ref="dkcc:DistrictSubdivisionIdentifier" minOccurs="0"/>
+			<element ref="dkcc:PostCodeIdentifier"/>
+			<element ref="dkcc:DistrictName"/>
+			<element ref="dkcc-2:CountryIdentificationCode" minOccurs="0"/>
+		</sequence>
+	</complexType>
+</schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="CountryIdentificationCode" type="dkcc:CountryIdentificationCodeType" />
+  <complexType name="CountryIdentificationCodeType">
+    <simpleContent>
+      <extension base="dkcc:_CountryIdentificationCodeType">
+        <attribute name="scheme" type="dkcc:_CountryIdentificationSchemeType" use="required" />
+      </extension>
+    </simpleContent>
+  </complexType>
+  <simpleType name="_CountryIdentificationCodeType">
+    <restriction base="string">
+      <pattern value="[a-z,A-Z]{2}|[a-z,A-Z]{3}|[0-9]{3}|[0-9]{4}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="_CountryIdentificationSchemeType">
+    <restriction base="string">
+      <enumeration value="iso3166-alpha2" />
+      <enumeration value="iso3166-alpha3" />
+      <enumeration value="un-numeric3" />
+      <enumeration value="imk" />
+    </restriction>
+  </simpleType>
+</schema>

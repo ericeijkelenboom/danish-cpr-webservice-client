@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:capevo="http://rep.oio.dk/capevo.dk/xml/schemas/2007/08/01/" xmlns:xkom-1="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" xmlns:itst="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/" xmlns:dkcc-1="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2006/01/23/" xmlns:cpr-5="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/17/" xmlns:cpr-4="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/" xmlns:cpr-6="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/" xmlns:cpr-1="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns:cpr-2="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns:xkom-2="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/" xmlns:dkcc-3="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2006/01/23/DKCC_PersonGenderCode.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2006/01/23/" />
+  <xs:import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/11/24/CPR_Core20051124.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/" />
+  <xs:import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/05/19/CPR_AddresseeName.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" />
+  <xs:import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/03/18/CPR_Core20050318.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_DanishAddressStructure.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_ForeignAddressStructure.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_PersonStatusCode.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_PersonDeathDateStructure.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_AddressIdentifierCode.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationIdentifierCodeStructure.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationCurrentIdentifier.xsd" />
+  <xs:element name="PersonBasicInformationStructure" type="cpr:PersonBasicInformationStructureType" />
+  <xs:complexType name="PersonBasicInformationStructureType">
+    <xs:sequence>
+      <xs:element ref="cpr-3:PersonCivilRegistrationIdentifier" />
+      <xs:element minOccurs="0" ref="cpr-2:AddresseeName" />
+      <xs:element ref="cpr-1:PersonBirthDateStructure" />
+      <xs:element ref="dkcc-1:PersonGenderCode" />
+      <xs:element ref="cpr:PersonStatusCode" />
+      <xs:element minOccurs="0" ref="cpr:PersonDeathDateStructure" />
+      <xs:element ref="cpr:PersonCivilRegistrationIdentifierCodeStructure" />
+      <xs:element minOccurs="0" ref="cpr:PersonCivilRegistrationCurrentIdentifier" />
+      <xs:element minOccurs="0" ref="cpr:AddressIdentifierCode" />
+      <xs:choice minOccurs="0">
+        <xs:element ref="cpr:DanishAddressStructure" />
+        <xs:element ref="cpr:ForeignAddressStructure" />
+      </xs:choice>
+      <xs:element ref="cpr-1:PersonInformationProtectionIndicator" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

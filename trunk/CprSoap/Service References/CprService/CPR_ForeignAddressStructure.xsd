@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns:capevo="http://rep.oio.dk/capevo.dk/xml/schemas/2007/08/01/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" />
+  <xs:import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_Dkcc20050519.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" />
+  <xs:import schemaLocation="../../../../../../capevo.dk/xml/schemas/2007/08/01/CAPEVO_LocationDescriptionText.xsd" namespace="http://rep.oio.dk/capevo.dk/xml/schemas/2007/08/01/" />
+  <xs:element name="ForeignAddressStructure" type="cpr:ForeignAddressStructureType" />
+  <xs:complexType name="ForeignAddressStructureType">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="dkcc-4:PostalAddressFirstLineText" />
+      <xs:element minOccurs="0" ref="dkcc-4:PostalAddressSecondLineText" />
+      <xs:element minOccurs="0" ref="dkcc-4:PostalAddressThirdLineText" />
+      <xs:element minOccurs="0" ref="dkcc-4:PostalAddressFourthLineText" />
+      <xs:element minOccurs="0" ref="dkcc-4:PostalAddressFifthLineText" />
+      <xs:element ref="dkcc-2:CountryIdentificationCode" />
+      <xs:element ref="capevo:LocationDescriptionText" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

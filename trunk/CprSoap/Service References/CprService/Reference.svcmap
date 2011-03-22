@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4c74f0b3-8932-4801-af16-269373acb5a4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>true</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="..\..\PersonBasicInformation_2\xml\xsd\PersonBasicInformation\ServiceSchemas\PersonBasicInformationService_2.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DKCC_PostalAddressSixthLineText.xsd" MetadataType="Schema" ID="257a01a6-aa29-4828-aee5-ee0ae580ebdb" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressSixthLineText.xsd" />
+    <MetadataFile FileName="CPR_PersonInformationProtectionIndicator.xsd" MetadataType="Schema" ID="d2c917fd-3240-4cb4-9fc8-16cc665a4136" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/CPR_PersonInformationProtectionIndicator.xsd" />
+    <MetadataFile FileName="CPR_BirthDateUncertaintyIndicator.xsd" MetadataType="Schema" ID="428e3151-7525-4f78-bcb7-dd9d11add8b7" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/CPR_BirthDateUncertaintyIndicator.xsd" />
+    <MetadataFile FileName="CPR_AddresseeName.xsd" MetadataType="Schema" ID="c4f45d70-7131-4d66-b0b3-3bf912295673" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/CPR_AddresseeName.xsd" />
+    <MetadataFile FileName="DKCC_PersonGenderCode.xsd" MetadataType="Schema" ID="e9437c75-e103-4dea-afd8-bef2ff29b3ae" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2006/01/23/DKCC_PersonGenderCode.xsd" />
+    <MetadataFile FileName="CPR_Core20050519.xsd" MetadataType="Schema" ID="c8125df4-d05b-47a3-9073-68a14c4793ec" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/CPR_Core20050519.xsd" />
+    <MetadataFile FileName="DKCC_PostalAddressFifthLineText.xsd" MetadataType="Schema" ID="386e7635-a436-4fb1-9d01-9508be7a71e1" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFifthLineText.xsd" />
+    <MetadataFile FileName="DKCC_MailDeliverySublocationIdentifier.xsd" MetadataType="Schema" ID="bd8844c5-8493-44cd-9c57-ce57d3ba4f3c" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/DKCC_MailDeliverySublocationIdentifier.xsd" />
+    <MetadataFile FileName="CPR_AuthorityCode.xsd" MetadataType="Schema" ID="965e4c4c-f0e6-4ceb-bd40-be078f89bc99" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_AuthorityCode.xsd" />
+    <MetadataFile FileName="DKCC_DistrictSubdivisionIdentifier.xsd" MetadataType="Schema" ID="68d39a53-a864-4630-8264-e48ea501e03d" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/DKCC_DistrictSubdivisionIdentifier.xsd" />
+    <MetadataFile FileName="CPR_PersonDeathDateStructure.xsd" MetadataType="Schema" ID="81dcb0ae-2ee4-476a-a2a0-74c3713005e2" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonDeathDateStructure.xsd" />
+    <MetadataFile FileName="CPR_PersonDeathDate.xsd" MetadataType="Schema" ID="42eeef95-c7e5-4777-8e8e-19e18fd62439" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonDeathDate.xsd" />
+    <MetadataFile FileName="DKCC_StreetName.xsd" MetadataType="Schema" ID="e310a405-9b49-4bf2-a8fc-b71536fbe443" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/DKCC_StreetName.xsd" />
+    <MetadataFile FileName="CPR_StreetNameForAddressingName.xsd" MetadataType="Schema" ID="6b5efd6b-277f-4881-b82c-4a355d1c0052" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_StreetNameForAddressingName.xsd" />
+    <MetadataFile FileName="CPR_PersonCivilRegistrationCurrentIdentifier.xsd" MetadataType="Schema" ID="e91cd8ab-bddd-4c96-953d-897f8b299797" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationCurrentIdentifier.xsd" />
+    <MetadataFile FileName="CPR_ReturnStructure.xsd" MetadataType="Schema" ID="f79c520b-9fcd-4a98-ae8c-34d39890dbe6" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_ReturnStructure.xsd" />
+    <MetadataFile FileName="DKCC_PostalAddressFirstLineText.xsd" MetadataType="Schema" ID="e4b37100-1403-433a-8076-f797df06aadd" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFirstLineText.xsd" />
+    <MetadataFile FileName="CPR_PersonBasicInformationRequest.xsd" MetadataType="Schema" ID="e5a1faf7-747e-4309-a76e-461ce35b489b" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/PersonBasicInformation/ServiceSchemas/CPR_PersonBasicInformationRequest.xsd" />
+    <MetadataFile FileName="DKCC_Dkcc20030213.xsd" MetadataType="Schema" ID="b34f1331-6b79-4284-8052-32d83254e648" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd" />
+    <MetadataFile FileName="CPR_Core20050318.xsd" MetadataType="Schema" ID="183cf68f-5672-4583-b9fc-2b90757c5b87" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_Core20050318.xsd" />
+    <MetadataFile FileName="DKCC_PostCodeIdentifier.xsd" MetadataType="Schema" ID="7a950577-4bcd-4e31-bdbf-02e8de3d6b61" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/DKCC_PostCodeIdentifier.xsd" />
+    <MetadataFile FileName="CPR_CompletePostalLabel.xsd" MetadataType="Schema" ID="6a4a86fa-93a3-463f-b1b9-fc3ab056cca2" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/CPR_CompletePostalLabel.xsd" />
+    <MetadataFile FileName="CPR_PersonCivilRegistrationIdentifierCodeStructure.xsd" MetadataType="Schema" ID="d7100e6f-843f-4649-8cfc-29b64f20d03b" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationIdentifierCodeStructure.xsd" />
+    <MetadataFile FileName="XKOM_AddressAccess.xsd" MetadataType="Schema" ID="93d274ab-92f5-42a8-afa3-2f0e1f813001" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/XKOM_AddressAccess.xsd" />
+    <MetadataFile FileName="CPR_GreenlandBuildingIdentifier.xsd" MetadataType="Schema" ID="4c80f07a-4494-48c6-873e-a81379bd96b5" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_GreenlandBuildingIdentifier.xsd" />
+    <MetadataFile FileName="CPR_AuthorityName.xsd" MetadataType="Schema" ID="7bccb591-e0a7-4b7d-b3bc-4f3abc157617" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/CPR_AuthorityName.xsd" />
+    <MetadataFile FileName="DKCC_BirthDate.xsd" MetadataType="Schema" ID="9f8b1409-ca6b-46cd-9e54-65020dfe65a9" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/DKCC_BirthDate.xsd" />
+    <MetadataFile FileName="CPR_PersonBasicInformationResponse.xsd" MetadataType="Schema" ID="39c80894-68eb-4e20-8bbe-c239b8d3a733" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/PersonBasicInformation/ServiceSchemas/CPR_PersonBasicInformationResponse.xsd" />
+    <MetadataFile FileName="DKCC_CountryIdentificationCode.xsd" MetadataType="Schema" ID="9b7bd195-dda2-4922-9bd9-d299753036fd" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/DKCC_CountryIdentificationCode.xsd" />
+    <MetadataFile FileName="PersonBasicInformationService_2.wsdl" MetadataType="Wsdl" ID="7e03f8d5-ceb0-4f3a-af79-bd4db6e00912" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/PersonBasicInformation/ServiceSchemas/PersonBasicInformationService_2.wsdl" />
+    <MetadataFile FileName="DKCC_PostalAddressSecondLineText.xsd" MetadataType="Schema" ID="9246f0f0-1677-4679-af4b-7aef0b4bddb2" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressSecondLineText.xsd" />
+    <MetadataFile FileName="CPR_PersonCivilRegistrationIdentifier.xsd" MetadataType="Schema" ID="8fef3c75-b7d9-4239-b3f6-3b0e453b70e5" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_PersonCivilRegistrationIdentifier.xsd" />
+    <MetadataFile FileName="CPR_PersonDeathDateUncertaintyIndicator.xsd" MetadataType="Schema" ID="7aef951e-ddc0-47d5-9a88-1db62c9bc2c8" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonDeathDateUncertaintyIndicator.xsd" />
+    <MetadataFile FileName="CPR_Core20051124.xsd" MetadataType="Schema" ID="9449bdee-57f6-4eb1-abd3-6dc2943609e3" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/CPR_Core20051124.xsd" />
+    <MetadataFile FileName="CPR_PersonCivilRegistrationIdentifierReasonsCode.xsd" MetadataType="Schema" ID="9f040a8c-39f8-4510-bffb-0b9b64b302fe" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationIdentifierReasonsCode.xsd" />
+    <MetadataFile FileName="CPR_PersonBasicInformationStructure.xsd" MetadataType="Schema" ID="cea011b3-8421-4bac-8ab2-93eec1cb1dc8" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonBasicInformationStructure.xsd" />
+    <MetadataFile FileName="CPR_AddressNotComplete.xsd" MetadataType="Schema" ID="ca6aaa24-4284-4a80-a5c7-6235ccf15d43" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_AddressNotComplete.xsd" />
+    <MetadataFile FileName="CPR_DanishAddressStructure.xsd" MetadataType="Schema" ID="ad7f5e6f-3bc7-4a45-bd35-ec92e7cf4964" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_DanishAddressStructure.xsd" />
+    <MetadataFile FileName="CPR_ForeignAddressStructure.xsd" MetadataType="Schema" ID="57498c84-d9af-4e38-a693-4ff1250c0799" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_ForeignAddressStructure.xsd" />
+    <MetadataFile FileName="DKCC_DistrictName.xsd" MetadataType="Schema" ID="29282c5d-2c34-4b70-a091-51d0959de9c2" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/DKCC_DistrictName.xsd" />
+    <MetadataFile FileName="ITST_CareOfName.xsd" MetadataType="Schema" ID="38267952-531f-4eeb-b72b-52909fff8636" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/itst.dk/xml/schemas/2005/06/24/ITST_CareOfName.xsd" />
+    <MetadataFile FileName="DKCC_StreetBuildingIdentifier.xsd" MetadataType="Schema" ID="43debd37-daf8-4e19-9b7f-ca46981cbee7" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/DKCC_StreetBuildingIdentifier.xsd" />
+    <MetadataFile FileName="CPR_PersonBirthDateStructure.xsd" MetadataType="Schema" ID="cf59d6bd-2a8e-42cb-ac2a-7ed5de703aaa" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/11/24/CPR_PersonBirthDateStructure.xsd" />
+    <MetadataFile FileName="CPR_PersonCivilRegistrationIdentifierStatusCode.xsd" MetadataType="Schema" ID="54b98e7d-02dd-4d1a-847c-49184d941b8e" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonCivilRegistrationIdentifierStatusCode.xsd" />
+    <MetadataFile FileName="DKCC_Dkcc20050519.xsd" MetadataType="Schema" ID="c677c4a7-d822-4067-bd99-7b6f6ee75927" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_Dkcc20050519.xsd" />
+    <MetadataFile FileName="DKCC_PostalAddressFourthLineText.xsd" MetadataType="Schema" ID="03f1396d-4c75-4536-b11f-e4e11b8e1d88" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressFourthLineText.xsd" />
+    <MetadataFile FileName="DKCC_Dkcc20050315.xsd" MetadataType="Schema" ID="1da08557-a38c-4fa6-9d75-d55833f28d8c" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/DKCC_Dkcc20050315.xsd" />
+    <MetadataFile FileName="CPR_MunicipalityName.xsd" MetadataType="Schema" ID="5215557f-b06d-4f3a-8865-999ad80c1177" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/CPR_MunicipalityName.xsd" />
+    <MetadataFile FileName="CPR_AddressCompleteGreenland.xsd" MetadataType="Schema" ID="74278e79-df84-4420-9497-fcab0778e80f" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_AddressCompleteGreenland.xsd" />
+    <MetadataFile FileName="CPR_AddressIdentifierCode.xsd" MetadataType="Schema" ID="2f62bfe0-09e9-496e-9baf-7de63d3ca073" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_AddressIdentifierCode.xsd" />
+    <MetadataFile FileName="CPR_PersonStatusCode.xsd" MetadataType="Schema" ID="4c8540ae-93c0-4d7b-adce-ce5356ad5e16" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_PersonStatusCode.xsd" />
+    <MetadataFile FileName="DKCC_PostOfficeBoxIdentifier.xsd" MetadataType="Schema" ID="c35031cc-8dce-47ca-a5ec-f867c9dbb0cd" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/DKCC_PostOfficeBoxIdentifier.xsd" />
+    <MetadataFile FileName="DKCC_FloorIdentifier.xsd" MetadataType="Schema" ID="03a5f527-d5cb-4930-ad53-a5d84261bf1f" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/DKCC_FloorIdentifier.xsd" />
+    <MetadataFile FileName="DKCC_PostalAddressThirdLineText.xsd" MetadataType="Schema" ID="e88c4d1b-da33-4b7f-8cee-83c4903835e2" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/DKCC_PostalAddressThirdLineText.xsd" />
+    <MetadataFile FileName="CPR_ReturnMessageText.xsd" MetadataType="Schema" ID="791ce981-bd94-4f8b-88f3-49a893fc8adc" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_ReturnMessageText.xsd" />
+    <MetadataFile FileName="CPR_StreetCode.xsd" MetadataType="Schema" ID="ebe84713-dfe2-41b8-bb67-f168a0ba9806" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_StreetCode.xsd" />
+    <MetadataFile FileName="CPR_AddressStatusCode.xsd" MetadataType="Schema" ID="731a381e-c67c-42a3-9bd0-7190d870f00a" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_AddressStatusCode.xsd" />
+    <MetadataFile FileName="XKOM_AddressPostal.xsd" MetadataType="Schema" ID="9378cafe-4771-471b-a4ab-47848392cc07" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/XKOM_AddressPostal.xsd" />
+    <MetadataFile FileName="CPR_MunicipalityCode.xsd" MetadataType="Schema" ID="612e72bb-c581-40f0-87a3-15b1015d93d2" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/CPR_MunicipalityCode.xsd" />
+    <MetadataFile FileName="CAPEVO_LocationDescriptionText.xsd" MetadataType="Schema" ID="220d09b4-f3d5-4815-b1e3-b555aacd7fce" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/capevo.dk/xml/schemas/2007/08/01/CAPEVO_LocationDescriptionText.xsd" />
+    <MetadataFile FileName="XKOM_AddressComplete.xsd" MetadataType="Schema" ID="f5534ee0-9772-4d41-add2-6aab266d28ee" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/XKOM_AddressComplete.xsd" />
+    <MetadataFile FileName="CPR_ReturnCode.xsd" MetadataType="Schema" ID="67c4e4e6-4c14-4d6e-96ca-74ef3f764eda" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/CPR_ReturnCode.xsd" />
+    <MetadataFile FileName="DKCC_SuiteIdentifier.xsd" MetadataType="Schema" ID="1e8c9746-7957-4eb4-a779-dab8c13bd8de" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/DKCC_SuiteIdentifier.xsd" />
+    <MetadataFile FileName="CPR_CompletePostalLabelText.xsd" MetadataType="Schema" ID="5d115341-8fc8-4730-8703-5831e3138ced" SourceId="1" SourceUrl="../../PersonBasicInformation_2/xml/xsd/rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/CPR_CompletePostalLabelText.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

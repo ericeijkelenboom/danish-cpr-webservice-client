@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" xmlns:xkom="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns:dkcc2005="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns:dkcc2005-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2005/05/13/DKCC_PostOfficeBoxIdentifier.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/" />
+  <import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2005/03/18/CPR_StreetNameForAddressingName.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" />
+  <import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" />
+  <import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2005/03/15/DKCC_Dkcc20050315.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" />
+  <element name="AddressPostal" type="xkom:AddressPostalType" />
+  <complexType name="AddressPostalType">
+    <sequence>
+      <element minOccurs="0" ref="dkcc:MailDeliverySublocationIdentifier" />
+      <element ref="dkcc2005:StreetName" />
+      <element minOccurs="0" ref="cpr:StreetNameForAddressingName" />
+      <element ref="dkcc:StreetBuildingIdentifier" />
+      <element minOccurs="0" ref="dkcc:FloorIdentifier" />
+      <element minOccurs="0" ref="dkcc:SuiteIdentifier" />
+      <element minOccurs="0" ref="dkcc2005:DistrictSubdivisionIdentifier" />
+      <element minOccurs="0" ref="dkcc2005-2:PostOfficeBoxIdentifier" />
+      <element ref="dkcc2005:PostCodeIdentifier" />
+      <element ref="dkcc2005:DistrictName" />
+      <element minOccurs="0" ref="dkcc:CountryIdentificationCode" />
+    </sequence>
+  </complexType>
+</schema>

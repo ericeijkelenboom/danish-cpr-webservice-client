@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:cpr-4="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/" xmlns:cpr-3="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/" xmlns:cpr-6="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/" xmlns:itst="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/" xmlns:xkom-1="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" xmlns:dkcc-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" xmlns:dkcc="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/" xmlns:xkom-2="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2008/05/01/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="../../../../../../ebxml/xml/schemas/dkcc/2003/02/13/DKCC_Dkcc20030213.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/" />
+  <xs:import schemaLocation="../../../../../../xkom.dk/xml/schemas/2006/01/06/XKOM_AddressComplete.xsd" namespace="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/" />
+  <xs:import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2006/05/23/CPR_MunicipalityName.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/05/23/" />
+  <xs:import schemaLocation="../../../../../../itst.dk/xml/schemas/2005/06/24/ITST_CareOfName.xsd" namespace="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/" />
+  <xs:import schemaLocation="../../../../../../cpr.dk/xml/schemas/core/2006/01/10/CPR_CompletePostalLabel.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_AddressCompleteGreenland.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_AddressNotComplete.xsd" />
+  <xs:include schemaLocation="../../../../../../cpr.dk/xml/schemas/2008/05/01/CPR_AddressStatusCode.xsd" />
+  <xs:element name="DanishAddressStructure" type="cpr:DanishAddressStructureType" />
+  <xs:complexType name="DanishAddressStructureType">
+    <xs:sequence>
+      <xs:element ref="cpr:AddressStatusCode" />
+      <xs:element ref="cpr-4:MunicipalityName" />
+      <xs:element minOccurs="0" ref="itst:CareOfName" />
+      <xs:choice>
+        <xs:element ref="xkom-1:AddressComplete" />
+        <xs:element ref="cpr:AddressCompleteGreenland" />
+        <xs:element ref="cpr:AddressNotComplete" />
+      </xs:choice>
+      <xs:element minOccurs="0" ref="cpr-6:CompletePostalLabel" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

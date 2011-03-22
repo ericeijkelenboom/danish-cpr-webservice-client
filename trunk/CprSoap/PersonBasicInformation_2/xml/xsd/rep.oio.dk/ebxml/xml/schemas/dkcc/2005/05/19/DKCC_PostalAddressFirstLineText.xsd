@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Brian H N (CSC Danmark A/S) -->
+<xs:schema targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!--xs:import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" schemaLocation="../../../../../../../cpr.dk/xml/schemas/core/2005/05/19/CPR_CompletePostalLabelText.xsd"/-->
+	<xs:import namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" schemaLocation="../../../../../../../cpr.dk/xml/schemas/core/2005/05/19/CPR_Core20050519.xsd"/>
+	<!-- -->
+	<xs:element name="PostalAddressFirstLineText" type="cpr:CompletePostalLabelTextType"/>
+</xs:schema>

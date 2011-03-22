@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:cpr2006="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/" xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" xmlns:dkcc-4="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2006/01/10/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../../../../../cpr.dk/xml/schemas/core/2005/05/19/CPR_AddresseeName.xsd" namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/05/19/" />
+  <import schemaLocation="../../../../../../../ebxml/xml/schemas/dkcc/2005/05/19/DKCC_Dkcc20050519.xsd" namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/19/" />
+  <element name="CompletePostalLabel" type="cpr2006:CompletePostalLabelType" />
+  <complexType name="CompletePostalLabelType">
+    <sequence>
+      <element ref="cpr:AddresseeName" />
+      <element minOccurs="0" ref="dkcc-4:PostalAddressFirstLineText" />
+      <element minOccurs="0" ref="dkcc-4:PostalAddressSecondLineText" />
+      <element ref="dkcc-4:PostalAddressThirdLineText" />
+      <element minOccurs="0" ref="dkcc-4:PostalAddressFourthLineText" />
+      <element ref="dkcc-4:PostalAddressFifthLineText" />
+      <element minOccurs="0" ref="dkcc-4:PostalAddressSixthLineText" />
+    </sequence>
+  </complexType>
+</schema>
